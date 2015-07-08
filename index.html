@@ -15,7 +15,9 @@
       }
 
       body {
-        background: url(bg.jpg), url(bg_fast.gif) no-repeat center center fixed;
+        background: url(bg.jpg), url(bg_fast.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -24,12 +26,11 @@
       }
 
       @media (max-aspect-ratio: 3/4) { body { background-position: 40% 50%; } }
-      @media (mim-aspect-ratio: 3/4) { body { background-position: 50% 50%; } }
+      @media (min-aspect-ratio: 3/4) { body { background-position: 50% 50%; } }
       @media (min-aspect-ratio: 1/1) { body { background-position: 50% 35%; } }
-      @media (min-aspect-ratio: 5/4) { body { background-position: 50% 25%; } }
-      @media (min-aspect-ratio: 4/3) { body { background-position: 50% 15%; } }
-      @media (min-aspect-ratio: 2/1) { body { background-position: 50% 10%; } }
-      @media (min-aspect-ratio: 4/1) { body { background-position: 50% 5%;  } }
+      @media (min-aspect-ratio: 5/4) { body { background-position: 50% 30%; } }
+      @media (min-aspect-ratio: 4/3) { body { background-position: 50% 25%; } }
+      @media (min-aspect-ratio: 2/1) { body { background-position: 50% 20%; } }
 
 
       @media (min-width: 460px) { body { font-size: 20px; } }
