@@ -5,100 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <style type="text/css">
-    
 
-      body {
-        font-size: 14px;
-      }
-      @media(min-width:460px){
-        body {
-          font-size: 20px;
-        }
-      }
-      @media(min-width:768px){
-        body {
-          font-size: 26px;
-        }
-      }
-      @media(min-width:992px){
-        body {
-          font-size: 32px;
-        }
-      }
-      @media(min-width:1200px){
-        body {
-          font-size: 38px;
-        }
-      }
-    
+
       html, body {
         margin: 0;
         width: 100%;
         height: 100%;
         min-height: 100%;
       }
-    
-      body { 
-        background: url(bg.jpg) no-repeat center center fixed; 
+
+      body {
+        background: url(bg.jpg), url(bg_fast.gif) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        font-size: 14px;
       }
-      
+
+      @media (max-aspect-ratio: 3/4) { body { background-position: 40% 50%; } }
+      @media (mim-aspect-ratio: 3/4) { body { background-position: 50% 50%; } }
+      @media (min-aspect-ratio: 1/1) { body { background-position: 50% 35%; } }
+      @media (min-aspect-ratio: 5/4) { body { background-position: 50% 25%; } }
+      @media (min-aspect-ratio: 4/3) { body { background-position: 50% 15%; } }
+      @media (min-aspect-ratio: 2/1) { body { background-position: 50% 10%; } }
+      @media (min-aspect-ratio: 4/1) { body { background-position: 50% 5%;  } }
+
+
+      @media (min-width: 460px) { body { font-size: 20px; } }
+      @media (min-width: 768px) { body { font-size: 26px; } }
+      @media (min-width: 992px) { body { font-size: 32px; } }
+      @media (min-width:1200px) { body { font-size: 38px; } }
+
       table {
         width: 100%;
         height: 100%;
         border-collapse:collapse;
       }
-      
+
       #header, #footer {
         background-color: #000;
         background-color: rgba(0,0,0,0.5);
         width: 100%;
-        height: 20%;
+        height: 15%;
         color: #fff;
         text-align: center;
       }
-      
+
+      td {
+        padding: 0.2em
+      }
+
       #footer td {
         width: 50%;
       }
-      
+
       td, h1 {
         font-family: 'Montserrat', sans-serif;
+        margin: 0px;
       }
-      
+
       a, a:visited {
         color: #fff;
         text-decoration: none;
         font-size: 1.5em;
       }
-      
+
       a:hover {
         color: #fff;
         text-decoration: underline;
       }
-      
+
       a:active {
         color: #ccc;
         text-decoration: underline;
       }
-
     </style>
-    <title>Tymchuks Family</title>
+
+    <title>Tymchuk Family</title>
   </head>
+
   <body>
     <table>
       <tr id="header">
-        <td colspan="2"><h1>Tymchuks Family</h1></td> 
+        <td colspan="2"><h1>Tymchuk Family</h1></td>
       </tr>
-      
       <tr><td colspan="2"></td></tr>
-      
       <tr id="footer">
-        <td><a href="http://natalia.tymchuk.me">Natalia</a></td>
-        <td><a href="http://yuriy.tymchuk.me">Yuriy</a></td>
+        <td><a href="http://natalia.tymch.uk">Natalia</a></td>
+        <td><a href="http://yuriy.tymchuk.uk">Yuriy</a></td>
       </tr>
     </table>
   </body>
